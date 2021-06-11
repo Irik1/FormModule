@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/Irik1/FormModule/issues"
   },
-  "homepage": "https://github.com/Irik1/FormModule#readme"
+  "homepage": "https://github.com/Irik1/FormModule#readme",
+  "dependencies": {
+    "pdf-merger-js": "^3.1.0"
+  }
 }
