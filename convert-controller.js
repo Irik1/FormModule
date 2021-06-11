@@ -1,6 +1,6 @@
 //Сюда добавляем методы для конвертации в ПДФ и ДБФ
-const Convert = require("./convert");
-const DocFields = require("./document-fields");
+const Convert = require("./lib/convert");
+const DocFields = require("./lib/document-fields");
 const fs = require('fs');
 var path = require('path');
 const PDFMerger = require('pdf-merger-js');
