@@ -22,5 +22,8 @@
     "convert-multiple-files": "^1.2.5",
     "easy-template-x": "^2.0.0",
     "pdf-merger-js": "^3.1.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.7"
   }
 }
