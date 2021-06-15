@@ -137,7 +137,7 @@ async function ComplexPDF(request,convertData,res)
                 })
             });
     }
-}
+};
 
 function checkExistsWithTimeout(filePath, timeout) {
     return new Promise(function (resolve, reject) {
@@ -165,5 +165,4 @@ function checkExistsWithTimeout(filePath, timeout) {
             }
         });
     });
-}
-
+};
