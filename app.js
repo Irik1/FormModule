@@ -3,6 +3,8 @@ const DocFields = require("./lib/document-fields");
 const fs = require('fs');
 var path = require('path');
 const PDFMerger = require('pdf-merger-js');
+const cov = require('convert-multiple-files');
+
 
 var BASIC = {
     type:'1',//Тип формы
@@ -53,6 +55,7 @@ async function ConvertToPDF(){
         });
 };
 
+
 function checkExistsWithTimeout(filePath, timeout) {
     return new Promise(function (resolve, reject) {
 
@@ -83,9 +86,6 @@ function checkExistsWithTimeout(filePath, timeout) {
 
 const http = require("http");
 http.createServer(function(request,response){
-     
-    response.end("Hello NodeJS!");
-     
 }).listen(3000, "127.0.0.1",function(){
     ConvertToPDF()
     console.log("Сервер начал прослушивание запросов на порту 3000");
