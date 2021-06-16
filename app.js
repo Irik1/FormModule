@@ -34,16 +34,7 @@ async function ConvertToPDF(){
     let fields = [];
     let i =0;
     BASIC.convertData.forEach(el=>{
-        let temp = new DocFields(
-            data[i],
-            el,
-            null,
-            null,
-            null,
-            null,
-            1,
-            null
-        )
+        let temp = new DocFields(data[i],el)
         i++;
         fields.push(temp);
     });
@@ -51,11 +42,11 @@ async function ConvertToPDF(){
         path.join(BASIC.folder, BASIC.type+".docx") , 
         BASIC.folder,
         BASIC.folder,type);
-        await convertClass.FillPDF().then(function(filePath){
-            checkExistsWithTimeout(filePath[0],100000).then(function(result){
+        await convertClass.FillPDF().then(function(fpath){
+            checkExistsWithTimeout(fpath[0],100000).then(function(result){
                 
                         // fs.unlinkSync(filePath);
-                console.log(filePath);
+                console.log(fpath);
             }).catch((er)=>{
                 console.log(er);
             });
