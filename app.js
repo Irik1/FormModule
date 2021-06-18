@@ -88,5 +88,5 @@ const http = require("http");
 http.createServer(function(request,response){
 }).listen(3000, "127.0.0.1",function(){
     ConvertToPDF()
-    console.log("Сервер начал прослушивание запросов на порту 3000");
+
 });
