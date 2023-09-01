@@ -1,10 +1,10 @@
 # FormModule
-Модуль формирования печатных форм
+Module for forming printed forms
 
-## Задачи
-Написать модуль формирования печтаных форм.
+## Tasks
+Realise a module for forming printed forms.
 
-* Модуль не должен напрямую работать с СУБД.
-* Модуль должен использовать бесплатные тулы
-* Модуль не должен заранее знать всех путей и уметь работать с относительными путями
-* Модуль должен позволять стилизировать
+* The module should not work directly with the DBMS.
+* Module must use free tools
+* The module does not need to know all the paths in advance and be able to work with relative paths
+* The module should allow styling
